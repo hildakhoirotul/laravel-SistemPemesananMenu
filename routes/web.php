@@ -24,11 +24,22 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['middleware' => ['auth']], function () {
     Route::resource('tables', TableController::class);
     Route::prefix('menu')->group(function () {
         Route::resource('daftar_menu', MenuController::class);
         Route::resource('categories', CategoryController::class);
     });
     Route::resource('promo', PromoController::class);
+});
+
+Route::get('/mig', function () {
+    // Call and Artisan command from within your application.
+    Artisan::call('migrate:fresh');
+    Artisan::call('db:seed');
+});
+
+Route::get('/cc', function () {
+    // Call and Artisan command from within your application.
+    Artisan::call('config:clear');
 });
