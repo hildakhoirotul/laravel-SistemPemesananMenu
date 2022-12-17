@@ -6,15 +6,14 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Sistem Pemesanan Menu @yield('title')</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description"
-        content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
-    <meta name="keywords"
-        content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="description" content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="colorlib" />
 
     <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico" type="image/x-icon">
@@ -105,8 +104,7 @@
     <script type="4878d7dfa7bc22a8dfa99416-text/javascript" src="{{ asset('js/admindek/css-scrollbars.js') }}"></script>
     <script type="4878d7dfa7bc22a8dfa99416-text/javascript" src="{{ asset('js/admindek/common-pages.js') }}"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
-        type="4878d7dfa7bc22a8dfa99416-text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="4878d7dfa7bc22a8dfa99416-text/javascript"></script>
     <script type="4878d7dfa7bc22a8dfa99416-text/javascript">
         window.dataLayer = window.dataLayer || [];
 
@@ -116,7 +114,6 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
-
     </script>
     <script src="{{ asset('js/admindek/rocket-loader.min.js') }}" data-cf-settings="4878d7dfa7bc22a8dfa99416-|49" defer=""></script>
 </body>
